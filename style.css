@@ -19,24 +19,125 @@ body {
   min-height: 100vh;
 }
 
- .screen{
-  background: linear-gradient(90deg, #5D54A4, #7C78B8);	
-  box-shadow: 0px 0px 30px  #0f1a4d;	
-  min-height: 60vh;
-  min-width: 39vh;
+.screen {
+  background: linear-gradient(90deg, #5d54a4, #7c78b8);
+  box-shadow: 0px 0px 30px #0f1a4d;
+  min-height: 64vh;
+  min-width: 43vh;
   border-radius: 8px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
- 
- 
-} 
+}
+.login-info {
+  z-index: 1;
+  height: 100%;
+  position: relative;
+  left: -90px;
+  top: -60px;
+}
 
-/* .screen {		
-	background: linear-gradient(90deg, #5D54A4, #7C78B8);		
-	position: relative;	
-	height: 600px;
-	width: 360px;	
-	box-shadow: 0px 0px 24px #5C5696;
-} */
+.login-field{
+  padding-bottom: 30px;
+  
+  
+}
+.login-input,
+.pass-input{
+  border: none;
+  border-bottom: 2px solid #6a61ad;
+  background: none;
+  outline: none;
+
+}
+
+.screen-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  -webkit-clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
+}
+
+.screen-bg-shape {
+  transform: rotate(315deg);
+  position: absolute;
+}
+.shape1 {
+  height: 500px;
+  width: 480px;
+  background: #fff;
+  top: -60px;
+  right: 175px;
+  border-radius: 0px 0px 100px 0px;
+}
+
+.shape2 {
+  height: 220px;
+  width: 220px;
+  background: #6a61ad;
+  top: -170px;
+  right: 30px;
+  border-radius: 32px;
+}
+
+.shape3 {
+  height: 180px;
+  width: 500px;
+  background: #716a96;
+  border-radius: 60px;
+  top: 120px;
+  left: 50px;
+  right: 40px;
+}
+
+.shape4 {
+  height: 300px;
+  width: 300px;
+  background: #8d89db;
+  border-radius: 40px;
+  top: 450px;
+  left: 150px;
+}
+
+.socials {
+  position: relative;
+  top: 153px;
+  left: 143px;
+}
+
+h3 {
+  color: #ffffff;
+  /* position: relative; */
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.socials-span {
+
+  display: flex;
+  align-items: center;
+  
+}
+
+.socials-icon {
+  margin: 0;
+  text-decoration: none;
+  color: #ffffff;
+  padding-right: 22px;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials-icon:hover {
+  transition: transform 0.9s ease;
+  transform: scale(1.5);
+  color: #4037ee;
+}
+
+
+
+
